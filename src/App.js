@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => setJobs(data), []);
 
-const filterFunc = ({role, level, tools, languages}) => {
+  const filterFunc = ({role, level, tools, languages}) => {
     
   
   const titles = [role, level]
@@ -70,7 +70,7 @@ const filterFunc = ({role, level, tools, languages}) => {
                       className="bg-teal-500 flex flex-col justify-center px-2 rounded-r-md 
                     transition-colors duration-300 cursor-pointer hover:bg-gray-900">
                       <img src='./images/icon-remove.svg' alt="remove-icon" />
-                    </span>
+                  </span>
               </div>
               
               ))}
@@ -94,10 +94,8 @@ const filterFunc = ({role, level, tools, languages}) => {
           )
         }
 
- 
-
     </div>
-  );
+  )
 }
 
 export default App;
